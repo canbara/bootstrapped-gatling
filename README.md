@@ -1,12 +1,10 @@
 # bootstrapped-gatling
 
-Archetype generated gatling with maven
 
-Useful Links:
+*A working archetype generated gatling maven project base.*
 
-```
-http://gatling.io/docs/current/extensions/maven_archetype/
+## Reference:
 
-https://dzone.com/articles/how-create-and-run-gatling-20
+* http://gatling.io/docs/current/extensions/maven_archetype/
+* https://dzone.com/articles/how-create-and-run-gatling-20
 
-```
