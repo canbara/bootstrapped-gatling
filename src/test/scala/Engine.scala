@@ -10,7 +10,7 @@ object Engine extends App {
 		.binariesDirectory(IDEPathHelper.mavenBinariesDirectory.toString)
 	  .runDescription("N/A")
     .simulationClass("com.eztest.restapi.GatlingSmoketest")
-//    .simulationClass("com.eztest.restapi.EchoTest")
+//    .simulationClass("com.eztest.restapi.GwEchotest")
 
 
 

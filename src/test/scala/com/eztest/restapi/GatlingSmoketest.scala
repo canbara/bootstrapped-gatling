@@ -5,6 +5,7 @@ import io.gatling.http.Predef._
 
 class GatlingSmoketest extends Simulation {
 
+
   val httpConf = http // 4
     .baseURLs("http://computer-database.gatling.io") // 5
     .acceptHeader("text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8") // 6
@@ -21,5 +22,6 @@ class GatlingSmoketest extends Simulation {
   setUp(// 11
     scn.inject(atOnceUsers(10)) // 12
   ).protocols(httpConf) // 13
+
 
 }

@@ -105,18 +105,19 @@
 			</plugin>
 			<plugin>
       <!-- Run all [matching] tests] on mvn test -->
-      <groupId>io.gatling</groupId>
+        <groupId>io.gatling</groupId>
       <artifactId>gatling-maven-plugin</artifactId>
       <version>2.2.4</version>
       <configuration>
-      <simulationsFolder>src/test/scala/com/eztest/restapi</simulationsFolder>
-      <!--<includes>
-        <include>com/eztest/restapi/*.scala</include>
-      </includes>-->
-      <!--excludes>
-      <exclude>**/SomeBadTest.scala</exclude>
-      </excludes-->
-      <!-- <simulationClass>foo.Bar</simulationClass> -->
+        <runMultipleSimulations>true</runMultipleSimulations>
+        <simulationsFolder>src/test/scala/com/eztest/restapi</simulationsFolder>
+        <!--<includes>
+          <include>com.eztest.restapi.GatlingSmoketest</include>
+        </includes>-->
+       <!-- <excludes>
+          <exclude>com.eztest.restapi.GwEchotest</exclude>
+        </excludes>-->
+        <!-- <simulationClass>foo.Bar</simulationClass> -->
       </configuration>
       <executions>
       <execution>
